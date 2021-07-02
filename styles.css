@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+   background-color: black;
+}
+p {
+    font-family: 'Dancing Script', cursive;
+    color: azure;
+    float: left;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+.card {
+    height: 80vh;
+    flex: 0.5;
+    border-radius: 50px;
+    line-height: 80vh;
+    background-size: auto 100%;
+    cursor: pointer;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    margin: 2px;
+}
+h3 {
+    
+    color: azure;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+.card-active h3 {
+    font-size: 1.5rem;
+    opacity: 1;
+    color: azure;
+}
+.pause-btn {
+    width: 25%;
+    height: 25%;
+    float: left;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.card-box {
+    float: right;
+    margin-right: 50px;
+    margin-top: 50px;
+    display: flex;
+}
+.card-1 {
+    background-image: url('https://i.pinimg.com/originals/bd/42/7a/bd427a6e615872b3cce2e7322779d451.jpg');
+
+}
+.card-2 {
+    background-image: url("https://epmgaa.media.clients.ellingtoncms.com/img/photos/2019/12/09/69629726_2255149204707582_8911923484112715776_o.jpg");
+}
+.card-3 {
+    background-image: url("https://thefader-res.cloudinary.com/private_images/w_1440,c_limit,f_auto,q_auto:best/F100_Drake_Cover_FINAL_tuqta0/drake-views-from-the-6-cover-story-interview.jpg");
+}
+.card-4 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/23/Lil-Peep_PrettyPuke_Photoshoot.png");
+}
+.card-5 {
+    background-image: url("https://media.resources.festicket.com/www/artists/TravisScott_New.jpg");
+}
+.card-active {
+    flex: 7;
+}
+@media (max-width:480px) {
+    .card-box {
+        width: 100vw;
+    }
+    .card:nth-of-type(-1),
+    .card:nth-of-type(-2) {
+        display: none;
+    }
+}
